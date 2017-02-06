@@ -10,5 +10,15 @@
 <code>mvn test</code>
 
 <h1>Endpoints</h1>
+<p>The next json was used in the follows examples:</p>
+<code>{"name":"Barbecue", "images":[{"uri":"https://static.carrefourdigital.com.br/medias/sys_master/images/images/h66/he6/h00/h00/8944087203870.jpg"},{"uri":"https://static.carrefourdigital.com.br/medias/sys_master/images/images/h16/hc8/h00/h00/8944089759774.jpg"}]}</code>
 <p>Create a product</p>
-<code>POST http://localhost:8080/challenge/rest/product/</code>
+<code>Method:POST http://localhost:8080/challenge/rest/product/</code>
+<p>Update a product</p>
+<code>Method:PUT http://localhost:8080/challenge/rest/product/</code>
+<p>Delete a product</p>
+<code>Method:DELETE http://localhost:8080/challenge/rest/product/</code>
+<p>Get a product with images and child products</p>
+<code>Method:GET http://localhost:8080/challenge/rest/product/</code>
+<p>Get a product without images and child products</p>
+<code>Method:GET http://localhost:8080/challenge/rest/product/</code>
