@@ -1,0 +1,10 @@
+com/challenge/rest/ProductView$RelationList.class
+com/challenge/rest/ProductView.class
+com/challenge/dao/ProductDAO.class
+com/challenge/dao/EntityManagerDAO.class
+com/challenge/rest/ProductView$MainList.class
+com/challenge/buider/ProductBuilder.class
+com/challenge/rest/ProductREST.class
+com/challenge/dao/ImageDAO.class
+com/challenge/entity/Image.class
+com/challenge/entity/Product.class
