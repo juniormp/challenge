@@ -1,4 +1,11 @@
-<p>Easygoing project to create a RESTful API</p>
+<p>A challenge project to create a RESTful API</p>
+<b>Technical Specification:</b>
+<p>1) Maven must be used to build, run tests and start the application.</p>
+<p>2) The tests must be started with the mvn test command.</p>
+<p>3) The application must start with a Maven command: mvn exec:java, mvn jetty:run, mvn spring-boot:run, etc.</p>
+<p>4) The application must have a stateless API and use a database to store data.</p>
+<p>5) An embedded in-memory database should be used: either H2, HSQL, SQLite or Derby.</p>
+<p>6) The database and tables creation should be done by Maven or by the application.</p>
 
 <h1>Install and run the project</h1>
 <p>1. download/clone the project.</p>
@@ -26,9 +33,9 @@
 <p>Get a product with images and child products</p>
 <code>Method:GET http://localhost:8080/challenge/rest/product/{product-id}</code>
 <p>Get a product without images and child products</p>
-<p>You have to set the header fot images and child products (both are boolean values), so if you want images/child products set true.<p>
+<p>You have to set the header for images and child products (both are boolean values), so if you want images/child products set true.<p>
 <code>Method:GET http://localhost:8080/challenge/rest/product/{product-id}</code>
-<p>Get the childs products</p>
+<p>Get the child's products</p>
 <code>Method:GET http://localhost:8080/challenge/rest/product/child/{product-id}</code>
 <p>Get the image's products</p>
 <code>Method:GET http://localhost:8080/challenge/rest/product/image/{product-id}</code>
