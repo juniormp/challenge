@@ -18,7 +18,25 @@
 <code>Method:PUT http://localhost:8080/challenge/rest/product/</code>
 <p>Delete a product</p>
 <code>Method:DELETE http://localhost:8080/challenge/rest/product/</code>
+<p>Get all products with images and child products</p>
+<code>Method:GET http://localhost:8080/challenge/rest/product/</code>
+<p>Get all products without images and child products</p>
+<p>You have to set the header fot images and child products (both are boolean values), so if you want images/child products set true.<p>
+<code>Method:GET http://localhost:8080/challenge/rest/product/</code>
 <p>Get a product with images and child products</p>
-<code>Method:GET http://localhost:8080/challenge/rest/product/</code>
+<code>Method:GET http://localhost:8080/challenge/rest/product/{product-id}</code>
 <p>Get a product without images and child products</p>
-<code>Method:GET http://localhost:8080/challenge/rest/product/</code>
+<p>You have to set the header fot images and child products (both are boolean values), so if you want images/child products set true.<p>
+<code>Method:GET http://localhost:8080/challenge/rest/product/{product-id}</code>
+<p>Get the childs products</p>
+<code>Method:GET http://localhost:8080/challenge/rest/product/child/{product-id}</code>
+<p>Get the image's products</p>
+<code>Method:GET http://localhost:8080/challenge/rest/product/image/{product-id}</code>
+
+
+
+
+
+
+
+
