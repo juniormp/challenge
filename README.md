@@ -1,8 +1,5 @@
 
-<p>A challenge project to create a RESTful API</p>
-<br/>
-<p><b>Comments</b></p>
-<p>Few tests missing<p>
+<h1>RESTful API</h1>
 <br/>
 <b>Technical Specification:</b>
 <p>1) Maven must be used to build, run tests and start the application.</p>
