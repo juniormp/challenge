@@ -9,7 +9,7 @@ class DigitalItemShippingHandler(private val orderRepository : OrderRepository,
                                  private val mailService : MailService ) : ItemShippingHandler {
 
     override fun handle(eventData : OrderItemClosed){
-        val message : String  = "Digital"
+        val message : String  = "Digital - voucher de desconto de R$ 10 ao comprador associado ao pagamento."
         mailService.send(message)
     }
 }
