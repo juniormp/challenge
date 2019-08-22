@@ -1,5 +1,6 @@
 package domain.test.order
 
+import domain.billing.CreditCard
 import domain.customer.Address
 import domain.customer.Customer
 import domain.order.Order
@@ -38,33 +39,33 @@ internal class OrderTest() {
 
     @Test
     fun performPaymentOrder() {
-        val payment = Payment()
+        val paymentMethod = CreditCard("43567890-987654367")
         val product = Product(1, "Flowered t-shirt", ProductType.Physical, 35.00)
         order.addProduct(product, 1)
 
-        order.pay(payment)
+        order.pay(paymentMethod)
 
-        assertEquals(payment, order.payment)
+        assertEquals(order.totalAmount, order.payment?.amount)
     }
 
     @Test
     fun throwExceptionForPaidOrder() {
-        val payment = Payment()
+        val paymentMethod = CreditCard("43567890-987654367")
         val product = Product(1, "Flowered t-shirt", ProductType.Physical, 35.00)
         order.addProduct(product, 1)
-        order.pay(payment)
+        order.pay(paymentMethod)
 
         assertFailsWith(Exception::class, "The order has already been paid!") {
-            order.pay(payment)
+            order.pay(paymentMethod)
         }
     }
 
     @Test
     fun throwExceptionForEmptyOrder() {
         assertFailsWith(Exception::class, "Empty order can not be paid!") {
-            val payment = Payment()
+            val paymentMethod = CreditCard("43567890-987654367")
 
-            order.pay(payment)
+            order.pay(paymentMethod)
         }
     }
 }

@@ -1,4 +1,4 @@
-package domain.order
+package domain.billing
 
 import domain.billing.PaymentMethod
 

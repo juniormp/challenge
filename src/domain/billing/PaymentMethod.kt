@@ -1,4 +1,3 @@
 package domain.billing
 
-interface PaymentMethod {
-}
+interface PaymentMethod {}

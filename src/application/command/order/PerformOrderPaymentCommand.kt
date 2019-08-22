@@ -9,7 +9,7 @@ class PerformOrderPaymentCommand(private val dto : PerformOrderPaymentDTO,
     override fun execute() {
         val order = orderRepository.findOrder(dto.orderId)
 
-        order?.pay(Payment())
+        order?.pay(dto.paymentMethod)
 
         if (order != null) {
             orderRepository.save(order)

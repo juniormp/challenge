@@ -1,3 +1,5 @@
 package application.command.order
 
-data class PerformOrderPaymentDTO(val orderId : Int) {}
+import domain.billing.PaymentMethod
+
+data class PerformOrderPaymentDTO(val orderId : Int, val paymentMethod : PaymentMethod) {}

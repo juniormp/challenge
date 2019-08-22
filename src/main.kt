@@ -1,4 +1,5 @@
 import application.command.order.*
+import domain.billing.CreditCard
 import infrastructure.repository.OrderRepository
 import infrastructure.repository.ProductRepository
 
@@ -35,7 +36,7 @@ fun digitalProductSetup() : AddProductToOrderCommand {
 }
 
 fun paymentSetup() : PerformOrderPaymentCommand{
-    val performOrderPaymentDTO = PerformOrderPaymentDTO(1)
+    val performOrderPaymentDTO = PerformOrderPaymentDTO(1, CreditCard("43567890-987654367"))
     return PerformOrderPaymentCommand(performOrderPaymentDTO, OrderRepository)
 }
 
